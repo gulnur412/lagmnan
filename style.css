@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 400px;
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+h1{
+    z-index: 1;
+}
+img{
+    width: 30px;
+    height: 30px;
+}
+ul li {
+    list-style: none;
+    cursor: pointer;
+}
+span{
+    margin-right: 1rem;
+}
+ul li:hover{
+    background: gray;
+    color: green;
+}
+#d{
+    background: green;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    left: 45%;
+    top: 25%;
+    background: green;
+    z-index: -1;
+    height: 30px;
+}
